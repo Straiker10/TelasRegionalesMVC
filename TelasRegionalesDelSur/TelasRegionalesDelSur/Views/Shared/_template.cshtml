@@ -30,14 +30,15 @@
     <!-- Main CSS-->
     <link href="@Url.Content("~/Content")/theme.css" rel="stylesheet" media="all">
 </head>
-<body>
+<body class="animsition">
+    <div class="page-wrapper">
         <!-- HEADER MOBILE-->
         <header class="header-mobile d-block d-lg-none">
             <div class="header-mobile__bar">
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
                         <a class="logo" href="index.html">
-                            <img src="@Url.Content("~/Images")/logotelas.jpg" alt="CoolAdmin" />
+                            <img src="@Url.Content("~/Images")/telasLogo.png" alt="CoolAdmin" width="200px" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -46,7 +47,7 @@
                         </button>
                     </div>
                 </div>
-            </div>
+            </div>  
             <nav class="navbar-mobile">
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
@@ -154,6 +155,7 @@
                 </div>
             </nav>
         </header>
+        <!-- END HEADER MOBILE-->
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
@@ -165,23 +167,23 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
-                            <a href="#">
-                                <i class="fas fa-home"></i>INICIO
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-home"></i>Inicio
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                            <i class="fas fa-chart-bar"></i>PRODUCTOS
+                            <a href="chart.html">
+                                <i class="fas fa-chart-bar"></i>Productos
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="fas fa-users"></i>USUARIOS
+                            <a href="table.html">
+                                <i class="fas fa-users"></i>Usuarios
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="far fa-envelope"></i>CONTACTOS
+                            <a href="form.html">
+                                <i class="far  fa-envelope"></i>Contactos
                             </a>
                         </li>
                     </ul>
@@ -189,29 +191,28 @@
             </div>
         </aside>
         <!-- END MENU SIDEBAR-->
-        <!-- END HEADER MOBILE-->
-        <!-- HEADER DESKTOP-->
-        <header class="header-desktop">
-            <div class="section__content section__content--p30">
-                <div class="container-fluid">
-                    <div class="header-wrap">
-                        <form class="form-header" action="" method="POST">
-                            
-                        </form>
-                        <div class="header-button">
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action="" method="POST"></form>
+
                             <div class="account-wrap">
                                 <div class="account-item clearfix js-item-menu">
                                     <div class="image">
-                                        <img src="@Url.Content("~/Images")/user.png" />
+                                        <img src="@Url.Content("~/Images")/user.png" alt="John Doe" />
                                     </div>
                                     <div class="content">
-                                        <a class="js-acc-btn" href="#">Diosemir</a>
+                                        <a class="js-acc-btn" href="#">Diosemir Nah</a>
                                     </div>
                                     <div class="account-dropdown js-dropdown">
                                         <div class="info clearfix">
                                             <div class="image">
                                                 <a href="#">
-                                                    <img src="@Url.Content("~/Images")/user.png" alt="Diosemir Nah" />
+                                                    <img src="@Url.Content("~/Images")/user.png" alt="John Doe" />
                                                 </a>
                                             </div>
                                             <div class="content">
@@ -232,35 +233,39 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <!-- HEADER DESKTOP-->
 
-        <div>
-            @RenderBody()
+            </header>
+                </div>
+            <!-- HEADER DESKTOP-->
+            
         </div>
 
-        <!-- Jquery JS-->
-        <script src="@Url.Content("~/Content")/vendor/jquery-3.2.1.min.js"></script>
-        <!-- Bootstrap JS-->
-        <script src="@Url.Content("~/Content")/vendor/bootstrap-4.1/popper.min.js"></script>
-        <script src="@Url.Content("~/Content")/vendor/bootstrap-4.1/bootstrap.min.js"></script>
-        <!-- Vendor JS       -->
-        <script src="@Url.Content("~/Content")/vendor/slick/slick.min.js">
-        </script>
-        <script src="@Url.Content("~/Content")/vendor/wow/wow.min.js"></script>
-        <script src="@Url.Content("~/Content")/vendor/animsition/animsition.min.js"></script>
-        <script src="@Url.Content("~/Content")/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
-        </script>
-        <script src="@Url.Content("~/Content")/vendor/counter-up/jquery.waypoints.min.js"></script>
-        <script src="@Url.Content("~/Content")/vendor/counter-up/jquery.counterup.min.js">
-        </script>
-        <script src="@Url.Content("~/Content")/vendor/circle-progress/circle-progress.min.js"></script>
-        <script src="@Url.Content("~/Content")/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
-        <script src="@Url.Content("~/Content")/vendor/chartjs/Chart.bundle.min.js"></script>
-        <script src="@Url.Content("~/Content")/vendor/select2/select2.min.js">
-        </script>
-        <!-- Main JS-->
-        <script src="@Url.Content("~/Scripts")/main.js"></script>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="@Url.Content("~/Content")/vendor/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="@Url.Content("~/Content")/vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="@Url.Content("~/Content")/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <!-- Vendor JS       -->
+    <script src="@Url.Content("~/Content")/vendor/slick/slick.min.js">
+    </script>
+    <script src="@Url.Content("~/Content")/vendor/wow/wow.min.js"></script>
+    <script src="@Url.Content("~/Content")/vendor/animsition/animsition.min.js"></script>
+    <script src="@Url.Content("~/Content")/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="@Url.Content("~/Content")/vendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="@Url.Content("~/Content")/vendor/counter-up/jquery.counterup.min.js">
+    </script>
+    <script src="@Url.Content("~/Content")/vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="@Url.Content("~/Content")/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="@Url.Content("~/Content")/vendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="@Url.Content("~/Content")/vendor/select2/select2.min.js">
+    </script>
+    <!-- Main JS-->
+    <script src="@Url.Content("~/Scripts")/main.js"></script>
 </body>
 </html>

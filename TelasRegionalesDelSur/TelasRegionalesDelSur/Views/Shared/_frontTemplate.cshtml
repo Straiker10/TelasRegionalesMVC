@@ -43,15 +43,7 @@
                                 <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
-                            <div class="search">
-                                <form role="form">
-                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                                    <i class="fa fa-search"></i>
-                                </form>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -72,9 +64,14 @@
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="index.html">Inicio</a></li>
-                        <li><a href="#">Misión</a></li>
-                        <li><a href="#">Visión</a></li>
-                        <li><a href="#">Valores</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nosotros <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Misión y Visión</a></li>
+                                <li><a href="#">Integrantes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Productos</a></li>
                         @*<li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
@@ -85,7 +82,7 @@
                             </ul>
                         </li>*@
                         <li><a href="#">Contactanos</a></li>
-                        <li>@Html.ActionLink("Login", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Login", "InicioSesion", "Login")</li>
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -100,6 +97,8 @@
         @RenderBody()
     </div>
 
+    <section id="bottom">
+    </section>
 
     <footer id="footer" class="midnight-blue">
         <div class="container">

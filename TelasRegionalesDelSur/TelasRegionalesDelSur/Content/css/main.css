@@ -652,7 +652,7 @@ input.search-form:hover {
 }
 
 #services {
-  background: #000 url(../images/services/bg_services.png);
+  background: url(../Images/images/services/bg_services.png);
   background-size: cover;
 }
 
@@ -949,7 +949,7 @@ a.accordion-toggle  i{
 }
 
 #partner {
-  background: url(../images/partners/partner_bg.png) 50% 50% no-repeat;
+  background: url(../Images/telaitem1.jpg) 50% 50% no-repeat;
   background-size: cover;
 }
 
@@ -1483,7 +1483,7 @@ ul.social_icons li  a i{
 }
 
 .clients-comments {
-    background-image: url("../images/image_bg.png");
+    background-image: url("../Images/telaitem1.jpg");
     background-position: center 118px;
     background-repeat: no-repeat;
     margin-bottom: 100px;
