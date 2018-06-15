@@ -182,6 +182,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FrontController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -676,6 +677,7 @@
     <Content Include="Views\Shared\_template.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_frontTemplate.cshtml" />
+    <Content Include="Views\Front\InicioFront.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
