@@ -16,7 +16,7 @@ namespace TelasRegionalesDelSur
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Front", action = "InicioFront", id = UrlParameter.Optional }
             );
         }
     }
